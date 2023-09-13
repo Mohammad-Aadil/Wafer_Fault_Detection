@@ -47,7 +47,7 @@ class TraininingPipeline:
         except Exception as e:
             raise CustomException(e,sys)
         
-
+#  this run pipeline
     def run_pipeline(self):
         try:
             feature_store_file_path = self.start_data_ingestion()
