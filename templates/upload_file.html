@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wafer Fault Detection</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Add your custom CSS file here -->
+
+  <style>
+    /* Define your custom styles here */
+    body {
+      background-color: #f0f0f0; /* Light gray background */
+      font-family: Arial, sans-serif;
+    }
+
+    .frame {
+      background: linear-gradient(to top right, #FF6B6B, #63E6BE); /* Gradient background */
+    }
+
+    .title {
+      background-color: #63E6BE; /* Green header background */
+      color: #FFFFFF; /* White text color */
+    }
+
+    h1 {
+      font-size: 24px; /* Larger title font size */
+    }
+
+    .dropzone {
+      border: 2px dashed #63E6BE; /* Green dashed border */
+    }
+
+    .btn {
+      background: #FF6B6B; /* Red button background */
+      color: #FFFFFF; /* White button text color */
+    }
+
+    .btn:hover {
+      background: #FF4747; /* Darker red on hover */
+    }
+  </style>
+</head>
+<body>
+
+<form action="/predict" method="post" enctype="multipart/form-data">
+  <h1 class="title">Upload CSV for Prediction</h1>
+  <div class="frame">
+    <div class="center">
+      <div class="title">
+        <h1>Drop a File to Upload</h1>
+      </div>
+      <div class="dropzone">
+        <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+        <input type="file" class="upload-input" name="file" accept=".csv">
+      </div>
+      <button type="submit" class="btn" name="uploadbutton">Upload File</button>
+    </div>
+  </div>
+</form>
+
+<script src='https://100dayscss.com/codepen/js/jquery.min.js'></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
