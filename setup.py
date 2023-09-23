@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name="src",
+    name="src1",
     version="0.0.1",
     author="Mohammad_Aadil",
     author_email="shaikhaadil8855@gmail.com",
